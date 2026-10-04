@@ -23,7 +23,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,'Segoe U
 .wrap{max-width:980px;margin:auto;padding:32px 28px 44px}
 a{color:var(--accent);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .skip{position:absolute;left:12px;top:-100px;padding:10px;background:var(--bg);z-index:2}.skip:focus{top:8px}
-nav{display:flex;gap:12px 24px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:18px}nav a,.links a{display:inline-flex;align-items:center;min-height:44px}
+nav{display:flex;gap:12px 24px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:18px}nav a,.links a,.status a{display:inline-flex;align-items:center;min-height:44px}
 header{padding:48px 0 24px}.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;line-height:1.2;text-wrap:balance}h1{font-size:clamp(34px,5vw,54px);max-width:750px;margin:14px 0 22px;font-weight:400}h2{font-size:30px;margin:42px 0 20px}h3{font-size:25px;margin:8px 0 12px}
 p{margin:12px 0}.intro{max-width:740px;font-size:20px;line-height:1.55}.muted,.meta,.limit{color:var(--muted)}.meta{font-size:13px}.ownership{max-width:770px;font-size:14px}
@@ -77,7 +77,7 @@ footer{border-top:1px solid var(--rule);padding-top:22px;margin-top:24px;color:v
 <section id="more" aria-labelledby="more-heading">
 <h2 id="more-heading">Four more angles</h2>
 <ul class="other">
-<li data-project="retail-sales-split"><div><strong>Retail value versus volume</strong><p>SingStat indices and approximate fixed-weight contributions, with coverage and residuals disclosed. Retail and F&amp;B stay separate; missing values are unavailable, not zero.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/retail-sales-split/">Retail report</a><a href="https://github.com/faizsaifulnizam/retail-sales-split">Code</a></div></li>
+<li data-project="retail-sales-split"><div><strong>Retail value versus volume</strong><p>SingStat indices and approximate fixed-weight contributions, with coverage and residuals disclosed. Retail and F&amp;B stay separate; missing values are unavailable, not zero.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/retail-sales-split/">Retail report</a><a href="https://public.tableau.com/views/SingaporeRetail/Singaporeretailsplitandrebased">Tableau dashboard</a><a href="https://github.com/faizsaifulnizam/retail-sales-split">Code</a></div></li>
 <li data-project="coe-quota-premium"><div><strong>COE quota and bid pressure</strong><p>Exercise-level changes and definition-consistent windows. Bid counts describe auction pressure, not bidders’ values or a causal demand effect.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/coe-quota-premium/">Quota report</a><a href="https://github.com/faizsaifulnizam/coe-quota-premium">Code</a></div></li>
 <li data-project="coe-category-break"><div><strong>COE category-definition break</strong><p>Paired A/B premium gaps across long and tight comparison windows. Redefined categories change the baskets; before/after differences are not a policy-effect estimate.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/coe-category-break/">Category report</a><a href="https://github.com/faizsaifulnizam/coe-category-break">Code</a></div></li>
 <li data-project="hdb-lease-slope"><div><strong>HDB remaining-lease slope</strong><p>Same-town, same-flat-type comparisons and controlled regressions. Cross-sectional associations are not a flat’s annual depreciation rate.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/hdb-lease-slope/">Lease report</a><a href="https://github.com/faizsaifulnizam/hdb-lease-slope">Code</a></div></li>
@@ -87,7 +87,7 @@ footer{border-top:1px solid var(--rule);padding-top:22px;margin-top:24px;color:v
 <h2 id="delivery-heading">What is delivered</h2>
 <p><strong>Reports and code:</strong> all seven linked analyses are public. They are reviewed snapshots, not automatically refreshing dashboards. Their repositories document provenance, methods, checks and limitations.</p>
 <p><strong>Power BI:</strong> editable source project, screenshots and a downloadable <code>.pbix</code> are delivered for the HDB resale analysis. Public interactive hosting is deferred.</p>
-<p><strong>Tableau:</strong> the retail dashboard remains an unpublished draft with a static preview. It is not a completed public interactive workbook.</p>
+<p><strong>Tableau:</strong> the <a href="https://public.tableau.com/views/SingaporeRetail/Singaporeretailsplitandrebased">interactive retail dashboard</a> is published and verified for signed-out viewing and an industry-filter test. It is a July 2026 snapshot, not an automatically refreshing report.</p>
 </section>
 </main>
 <footer><p>An independent, unofficial portfolio. Sources include HDB, MAS, LTA and SingStat; attribution and data licences are recorded in each project. Not a forecast or causal advice.</p><p><a href="https://github.com/faizsaifulnizam">Explore the GitHub profile →</a></p></footer>

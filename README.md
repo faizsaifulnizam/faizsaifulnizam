@@ -14,11 +14,11 @@ These are **Hermes-assisted projects**. Hermes implemented much of the pipeline 
 
 #### More analyses
 
-- [Retail value versus volume](https://github.com/faizsaifulnizam/retail-sales-split) — fixed-weight contribution estimates with explicit coverage and residual limits.
+- [Retail value versus volume](https://github.com/faizsaifulnizam/retail-sales-split) — fixed-weight contribution estimates with explicit coverage and residual limits. [Explore the Tableau dashboard](https://public.tableau.com/views/SingaporeRetail/Singaporeretailsplitandrebased).
 - [COE quota and bid pressure](https://github.com/faizsaifulnizam/coe-quota-premium) — exercise-level descriptive associations, not causal demand estimates.
 - [COE category-definition break](https://github.com/faizsaifulnizam/coe-category-break) — paired A/B premium gaps across comparison windows; not a policy-effect estimate.
 - [HDB remaining-lease slope](https://github.com/faizsaifulnizam/hdb-lease-slope) — controlled cross-sectional associations, not a flat's depreciation forecast.
 
-**Tools shown in the projects:** DuckDB SQL, Python, matplotlib, Power BI and Excel. Each repository documents its source snapshot, methods, checks and limitations.
+**Tools shown in the projects:** DuckDB SQL, Python, matplotlib, Power BI, Tableau and Excel. Each repository documents its source snapshot, methods, checks and limitations.
 
-**Dashboard status:** the Power BI source project, screenshots and downloadable `.pbix` are delivered; public interactive hosting is deferred. The retail Tableau dashboard remains an unpublished draft with a static preview, not a completed public interactive workbook.
+**Dashboard status:** the Power BI source project, screenshots and downloadable `.pbix` are delivered; public interactive hosting is deferred. The [retail Tableau dashboard](https://public.tableau.com/views/SingaporeRetail/Singaporeretailsplitandrebased) is published and verified for signed-out viewing and an industry-filter test. It is a July 2026 snapshot, not an automatically refreshing report.
