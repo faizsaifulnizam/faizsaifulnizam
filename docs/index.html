@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Faiz Saifulnizam — Data analytics portfolio</title>
+<meta name="description" content="Six analyses of Singapore public data and one AI-assisted SQL evaluation. Reproducible methods, data checks, decision memos and clear limits.">
+<link rel="canonical" href="https://faizsaifulnizam.github.io/faizsaifulnizam/">
+<meta property="og:title" content="Muhammad Faiz Saifulnizam — Data analytics portfolio">
+<meta property="og:description" content="Singapore public data, checked before it becomes a claim. Explore seven analyses and their evidence.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://faizsaifulnizam.github.io/faizsaifulnizam/">
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#FBFBF9;--fg:#14293D;--muted:#5C6B79;--accent:#22607B;--rule:#E7E3DC}
+@media(prefers-color-scheme:dark){:root{--bg:#101E2B;--fg:#EAE6DF;--muted:#9AA9B6;--accent:#8FC0D9;--rule:#2A3B4A}}
+@font-face{font-family:Inter;src:url('fonts/Inter-Regular.ttf');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url('fonts/Inter-SemiBold.ttf');font-weight:600;font-display:swap}
+@font-face{font-family:'Source Serif 4';src:url('fonts/SourceSerif4-Regular.ttf');font-weight:400;font-display:swap}
+@font-face{font-family:'Source Serif 4';src:url('fonts/SourceSerif4-Bold.ttf');font-weight:700;font-display:swap}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,'Segoe UI',Arial,sans-serif}
+.wrap{max-width:980px;margin:auto;padding:32px 28px 44px}
+a{color:var(--accent);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.skip{position:absolute;left:12px;top:-100px;padding:10px;background:var(--bg);z-index:2}.skip:focus{top:8px}
+nav{display:flex;gap:12px 24px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:18px}nav a,.links a{display:inline-flex;align-items:center;min-height:44px}
+header{padding:48px 0 24px}.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;line-height:1.2;text-wrap:balance}h1{font-size:clamp(34px,5vw,54px);max-width:750px;margin:14px 0 22px;font-weight:400}h2{font-size:30px;margin:42px 0 20px}h3{font-size:25px;margin:8px 0 12px}
+p{margin:12px 0}.intro{max-width:740px;font-size:20px;line-height:1.55}.muted,.meta,.limit{color:var(--muted)}.meta{font-size:13px}.ownership{max-width:770px;font-size:14px}
+.feature{display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;border-top:1px solid var(--rule);padding:28px 0}.number{font:20px/1.5 'Source Serif 4',Georgia,serif;color:var(--muted);padding-top:2px}.feature p{max-width:710px}.links{display:flex;gap:10px 24px;flex-wrap:wrap;font-size:14px}.limit{font-size:14px}
+.other{margin:0;padding:0;list-style:none}.other li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;padding:20px 0;border-top:1px solid var(--rule)}.other strong{font-weight:600}.other p{font-size:14px;margin:6px 0 0;max-width:650px}.other .links{align-self:start}
+.status{padding:8px 0 20px;border-top:1px solid var(--rule)}.status p{max-width:790px}.status h2{margin-top:28px}
+footer{border-top:1px solid var(--rule);padding-top:22px;margin-top:24px;color:var(--muted);font-size:13px}footer a{display:inline-flex;align-items:center;min-height:44px}
+@media(max-width:640px){.wrap{padding:18px 20px 32px}header{padding-top:32px}.feature{grid-template-columns:28px minmax(0,1fr);gap:12px}.other li{grid-template-columns:1fr;gap:4px}.intro{font-size:18px}h2{font-size:27px}h3{font-size:23px}}
+@media print{body{background:white;color:black;font-size:12pt}.wrap{max-width:none;padding:0}nav,.skip{display:none}a{color:black}.feature,.other li{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to projects</a>
+<div class="wrap">
+<nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#more">All projects</a><a href="#delivery">Delivery notes</a><a href="https://github.com/faizsaifulnizam">GitHub profile</a></nav>
+<header>
+<p class="kicker">Singapore · Data analytics portfolio</p>
+<h1>Muhammad Faiz Saifulnizam</h1>
+<p class="intro">Public data, checked before it becomes a claim.</p>
+<p class="muted">Six Singapore-data analyses and one AI-assisted SQL evaluation. Each connects a question to its source, method, checks and decision memo.</p>
+<p class="ownership">These are Hermes-assisted projects. Hermes implemented much of the pipeline and presentation; Faiz approved the analytical choices and publication gates. They are not presented as unaided coding.</p>
+</header>
+<main>
+<section id="work" aria-labelledby="selected-heading">
+<h2 id="selected-heading">Start with these three</h2>
+<article class="feature" data-project="hdb-resale-mart">
+<span class="number" aria-hidden="true">01</span><div>
+<p class="meta">HDB resale · DuckDB SQL · Python · Power BI</p>
+<h3>Rate or mix in resale prices?</h3>
+<p>A town-level shift-share analysis of Singapore’s four-room resale price move. The headline median and the additive mean-based decomposition are kept separate, with window and small-town sensitivity checks.</p>
+<p class="limit">Town-average “rate” still includes which flats sold within each town. This is not a like-for-like price index or a forecast.</p>
+<div class="links"><a href="https://faizsaifulnizam.github.io/hdb-resale-mart/">Read HDB resale report →</a><a href="https://github.com/faizsaifulnizam/hdb-resale-mart">Code and method</a><a href="https://github.com/faizsaifulnizam/hdb-resale-mart/releases">Power BI download</a></div>
+</div></article>
+<article class="feature" data-project="card-book-quality">
+<span class="number" aria-hidden="true">02</span><div>
+<p class="meta">MAS card statistics · Arithmetic attribution · Excel</p>
+<h3>Why did card write-offs rise?</h3>
+<p>A balance-versus-loss-ratio bridge on quarterly MAS data, with flow-versus-stock definitions, alternative denominators and a formula-based Excel quick-check workbook.</p>
+<p class="limit">An arithmetic attribution is not a causal account of borrower quality. Reported cards are not unique customers.</p>
+<div class="links"><a href="https://faizsaifulnizam.github.io/card-book-quality/">Read card write-offs report →</a><a href="https://github.com/faizsaifulnizam/card-book-quality">Code and method</a><a href="https://github.com/faizsaifulnizam/card-book-quality/releases/tag/v1.0.2">Excel download</a></div>
+</div></article>
+<article class="feature" data-project="ai-analyst-workflow">
+<span class="number" aria-hidden="true">03</span><div>
+<p class="meta">AI-assisted analytics · SQL guardrails · Result validation</p>
+<h3>Plausible SQL is not enough.</h3>
+<p>A reference-result checker for AI-generated SQL, with a versioned question set, read-only execution and a failure catalogue. In one dated mixed-model run, 27 of 32 questions passed first try; retries rescued none of the five wrong answers.</p>
+<p class="limit">This is a small single-table evaluation using three free-tier model IDs, not a model ranking or proof of general SQL accuracy.</p>
+<div class="links"><a href="https://faizsaifulnizam.github.io/ai-analyst-workflow/">Read SQL evaluation report →</a><a href="https://github.com/faizsaifulnizam/ai-analyst-workflow">Code and method</a><a href="https://github.com/faizsaifulnizam/ai-analyst-workflow/blob/main/docs/failure_catalogue.md">Failure catalogue</a></div>
+</div></article>
+</section>
+<section id="more" aria-labelledby="more-heading">
+<h2 id="more-heading">Four more angles</h2>
+<ul class="other">
+<li data-project="retail-sales-split"><div><strong>Retail value versus volume</strong><p>SingStat indices and approximate fixed-weight contributions, with coverage and residuals disclosed. Retail and F&amp;B stay separate; missing values are unavailable, not zero.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/retail-sales-split/">Retail report</a><a href="https://github.com/faizsaifulnizam/retail-sales-split">Code</a></div></li>
+<li data-project="coe-quota-premium"><div><strong>COE quota and bid pressure</strong><p>Exercise-level changes and definition-consistent windows. Bid counts describe auction pressure, not bidders’ values or a causal demand effect.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/coe-quota-premium/">Quota report</a><a href="https://github.com/faizsaifulnizam/coe-quota-premium">Code</a></div></li>
+<li data-project="coe-category-break"><div><strong>COE category-definition break</strong><p>Paired A/B premium gaps across long and tight comparison windows. Redefined categories change the baskets; before/after differences are not a policy-effect estimate.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/coe-category-break/">Category report</a><a href="https://github.com/faizsaifulnizam/coe-category-break">Code</a></div></li>
+<li data-project="hdb-lease-slope"><div><strong>HDB remaining-lease slope</strong><p>Same-town, same-flat-type comparisons and controlled regressions. Cross-sectional associations are not a flat’s annual depreciation rate.</p></div><div class="links"><a href="https://faizsaifulnizam.github.io/hdb-lease-slope/">Lease report</a><a href="https://github.com/faizsaifulnizam/hdb-lease-slope">Code</a></div></li>
+</ul>
+</section>
+<section id="delivery" class="status" aria-labelledby="delivery-heading">
+<h2 id="delivery-heading">What is delivered</h2>
+<p><strong>Reports and code:</strong> all seven linked analyses are public. They are reviewed snapshots, not automatically refreshing dashboards. Their repositories document provenance, methods, checks and limitations.</p>
+<p><strong>Power BI:</strong> editable source project, screenshots and a downloadable <code>.pbix</code> are delivered for the HDB resale analysis. Public interactive hosting is deferred.</p>
+<p><strong>Tableau:</strong> the retail dashboard remains an unpublished draft with a static preview. It is not a completed public interactive workbook.</p>
+</section>
+</main>
+<footer><p>An independent, unofficial portfolio. Sources include HDB, MAS, LTA and SingStat; attribution and data licences are recorded in each project. Not a forecast or causal advice.</p><p><a href="https://github.com/faizsaifulnizam">Explore the GitHub profile →</a></p></footer>
+</div>
+</body>
+</html>
